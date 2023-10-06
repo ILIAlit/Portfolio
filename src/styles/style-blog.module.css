@@ -1,0 +1,155 @@
+/*------------main------------------------------------------------------------*/
+
+.main {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  margin: 0 0 100px 0;
+}
+
+.main__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 75px 0 100px 0;
+}
+
+.main__title {
+  color: var(--text-color);
+  display: flex;
+  font-size: 67px;
+  line-height: 64px;
+  text-transform: uppercase;
+  font-family: TT-Norms-Heavy;
+  margin-bottom: 15px;
+}
+
+.main__title h3 {
+  text-align: center;
+}
+
+.main__text {
+  color: var(--Light-text-color);
+  max-width: 540px;
+  display: flex;
+  font-size: 20px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: -0.04em;
+  font-family: TT-Norms-Regular;
+}
+
+.main__projects {
+  display: grid;
+  grid: repeat(15, 1fr) / repeat(17, 1fr);
+  grid-gap: 5px;
+  grid-auto-flow: dense;
+  justify-content: center;
+
+}
+
+.main__project:nth-child(1) {
+  grid-area: 1 / 1 / span 5 / span 5;
+  position: relative;
+}
+
+.main__project:nth-child(2) {
+  grid-area: 6 / 1 / span 5 / span 5;
+  /* background-color: black;*/
+  position: relative;
+}
+
+.main__project:nth-child(3) {
+  grid-area: 1 / 6 / span 6 / span 5;
+  /* background-color: black;*/
+  position: relative;
+}
+
+.main__project:nth-child(4) {
+  grid-area: 7 / 6 / span 4 / span 4;
+  /* background-color: black;*/
+  position: relative;
+}
+
+.main__project:nth-child(5) {
+  grid-area: 7 / 10 / span 4 / span 4;
+  /* background-color: black;*/
+  position: relative;
+}
+
+.main__project:nth-child(6) {
+  grid-area: 7 / 14 / span 4 / span 4;
+  /* background-color: black;*/
+  position: relative;
+}
+
+.main__project:nth-child(7) {
+  grid-area: 1 / 11 / span 6 / span 7;
+  /* background-color: black;*/
+  position: relative;
+}
+
+.main__project:nth-child(8) {
+  grid-area: 11 / 1 / span 5 / span 5;
+  /* background-color: black;*/
+  position: relative;
+}
+
+.main__project:nth-child(9) {
+  grid-area: 11 / 6 / span 5 / span 5;
+  /* background-color: black;*/
+  position: relative;
+}
+
+.main__project:nth-child(10) {
+  grid-area: 11 / 11 / span 5 / span 7;
+  /* background-color: black;*/
+  position: relative;
+}
+
+.main__project img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.main__hovering {
+  display: block;
+  background-color: black;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(18, 18, 18, 0.86);
+  padding: 45px;
+  opacity: 0;
+  transition: 0.3s ease 0s;
+}
+
+@media (max-width: 680px) {
+  .main__projects {
+    display: flex;
+
+    flex-wrap: wrap;
+  }
+
+  .main__projects div {
+    flex: 0 1 49%;
+  }
+}
+
+@media (max-width: 520px) {
+  .main__projects {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .main__project:hover .main__hovering {
+    opacity: 1;
+  }
+}

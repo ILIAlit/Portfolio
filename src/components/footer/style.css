@@ -1,0 +1,37 @@
+/*------footer---------------------------------------------------------------------------*/
+.footer {
+  width: 100%;
+  min-height: 105px;
+  display: flex;
+  margin: 20px 0 0 0;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer .icon img {
+  width: 50px;
+}
+
+.footer .icon {
+  transition: 0.3s ease 0s;
+  opacity: 0.7;
+}
+
+.footer__title a {
+  color: var(--Light-text-color);
+  font-size: 20px;
+  line-height: 19px;
+  font-family: TT-Norms-Medium;
+  margin-top: 40px;
+  transition: 0.3s ease 0s;
+}
+
+@media screen and (min-width: 1024px) {
+  .footer .icon:hover {
+    opacity: 0.6;
+  }
+  .footer__title a:hover {
+    color: rgb(114, 114, 114);
+  }
+}

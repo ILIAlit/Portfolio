@@ -1,0 +1,163 @@
+/*-------header---------------------------------------------------------*/
+.header__title-mobile {
+  display: none;
+}
+
+.header {
+  position: relative;
+  width: 100%;
+  min-height: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: var(--text-color);
+}
+
+.header__main-blok {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.header__item {
+  display: flex;
+  gap: 35px;
+}
+
+.header__btn {
+  transition: 0.5s ease 0s;
+}
+
+.header__title-link::before {
+  content: "Литвиненко Илья";
+}
+
+.header .icons {
+  flex: 1;
+  justify-content: flex-end;
+}
+
+.header__title {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  font-size: 28px;
+  line-height: 34px;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  font-family: TT-Norms-Regular;
+}
+
+.header__title a {
+  transition: 0.3s ease 0s;
+  color: var(--text-color);
+}
+
+.header .icon {
+  transition: opacity 0.5s ease 0s;
+}
+
+.header__line-blok {
+  border: 1px solid var(--Light-text-color);
+}
+
+@media(max-width: 750px) {
+  .header__icons {
+    display: none;
+  }
+
+  .header__item {
+    width: 100%;
+  }
+
+  .header__title {
+    justify-content: flex-end;
+  }
+}
+
+@media(max-width: 520px) {
+  .header__title-link::before {
+    content: "Илья";
+  }
+}
+
+/*------------main------------------------------------------------------------*/
+
+.main {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  margin: 0 0 100px 0;
+}
+
+.main__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 75px 0 100px 0;
+
+}
+
+.main__text {
+  color: var(--text-color);
+  max-width: 640px;
+  display: flex;
+  font-size: 28px;
+  line-height: normal;
+  text-align: center;
+  font-family: TT-Norms-Medium;
+}
+
+.main__text a{
+  font-size: 25px;
+}
+
+.main__project {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 5px;
+}
+
+.main__project {
+  /* background-color: black;*/
+  position: relative;
+}
+
+.main__project img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.main__video{
+  display: flex;
+  justify-content: center;
+}
+
+.main__video video{
+  margin: 20px 0 0 0;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media screen and (min-width: 1024px) {
+  .header .icon:hover {
+    opacity: 0.8;
+  }
+}
+
+@media (max-width: 600px) {
+  .main__text{
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .main__text{
+    font-size: 16px;
+  }
+}
