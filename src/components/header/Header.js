@@ -2,11 +2,19 @@ import telegramIcon from "./../../IMG/icon-telegram.svg";
 import behanceIcon from "./../../IMG/icon-behance.svg";
 import imailIcon from "./../../IMG/icon-email.svg";
 
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
+import { useState } from "react";
+import { useEffect } from "react";
 
 import "./style.css";
 
 const Header = () => {
+    const [toggle, setToggle] = useState(false);
+
+    const path = useLocation(); 
+    useEffect(() => {
+        setToggle(false);
+    }, [path]);
 
     const activeLink = "header__menu-link header__menu-link-select";
     const normalLink = "header__menu-link";
@@ -25,7 +33,7 @@ const Header = () => {
                 </div>
                 <div className="header__title">
                         <h3><NavLink to="/">Литвиненко Илья</NavLink></h3>
-                    <div className="header__menu-modile-burger">
+                    <div onClick={() => {setToggle(!toggle)}} className="header__menu-modile-burger">
                         <div className="header__menu-modile-burger-item"></div>
                         <div className="header__menu-modile-burger-item"></div>
                         <div className="header__menu-modile-burger-item"></div>
@@ -43,7 +51,8 @@ const Header = () => {
                     </div>
                 </div>
             </div>
-            <div className="header__menu-modile-body _container">
+            {toggle && (
+                <div className="header__menu-modile-body _container">
                 <div className="header__menu-links mobile">
                     <nav>
                         <ul>
@@ -65,6 +74,8 @@ const Header = () => {
                     </div>
                 </div>
             </div>
+            )}
+            
             <div className="header__line-blok"></div>
         </header>
     );
