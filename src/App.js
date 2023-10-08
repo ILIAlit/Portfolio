@@ -29,8 +29,8 @@ function App() {
                         <Route path="/blog" element={<Blog />} />
                         <Route path="/project/:id" element={<Project/>} />
                     </Routes>
-                    <Footer/>
                     <BtnUp/>
+                    <Footer/>
                 </Router>
             </div>
         </div>

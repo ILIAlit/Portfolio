@@ -103,7 +103,7 @@
 
   .header__menu-links.mobile {
     justify-content: center;
-    margin: 0 0 20px 0;
+    margin: 0 0 40px 0;
   }
 
   .header__menu-link:nth-child(2) {
