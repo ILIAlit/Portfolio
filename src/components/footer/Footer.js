@@ -11,13 +11,13 @@ const Footer = () => {
         <footer className="footer">
             <div className="icons">
                 <div className="icon">
-                    <a href="#"><img src={telegramIcon} alt="telegram"/></a>
+                    <a href="https://t.me/ILIALiT"><img src={telegramIcon} alt="telegram"/></a>
                 </div>
                 <div className="icon">
-                    <a href="#"><img src={behanceIcon} alt="behance"/></a>
+                    <a href="https://www.behance.net/iliya1"><img src={behanceIcon} alt="behance"/></a>
                 </div>
                 <div className="icon">
-                    <a href="#"><img src={imailIcon} alt="email"/></a>
+                    <a href="mailto:ilialitvinenko2004@gmail.com"><img src={imailIcon} alt="email"/></a>
                 </div>
             </div>
             <div className="footer__title">
