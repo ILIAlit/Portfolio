@@ -27,31 +27,31 @@ const projectsList = [
   },
   {
     title: 'Дизайн концертной афиши',
-    text: 'Стриминговый сервис "EPMusic" - это веб приложение для прослушивания и загрузки треков',
+    text: 'Дизайн концертной афиши сделан мной для гитарного клуба "Старт"',
     cover: project2Cover,
     content: project2Content
   },
   {
     title: 'IT Outstaffing Company',
-    text: 'Стриминговый сервис "EPMusic" - это веб приложение для прослушивания и загрузки треков',
+    text: 'Дизайн главной страницы для Outstaffing Company в стиле необрутализм',
     cover: project3Cover,
     content: project3Content
   },
   {
     title: 'Сайт для тренировки музыкального слуха "MRNoise"',
-    text: 'Стриминговый сервис "EPMusic" - это веб приложение для прослушивания и загрузки треков',
+    text: 'MRNoise - это сайт для тренировки музыкального слуха',
     cover: project4Cover,
     // content: project4Content
   },
   {
     title: 'Web-дизайн для магазина обуви',
-    text: 'Стриминговый сервис "EPMusic" - это веб приложение для прослушивания и загрузки треков',
+    text: 'Web-дизайн главной страницы для магазина обуви',
     cover: project5Cover,
     content: project5Content
   },
   {
     title: 'NFT Project',
-    text: 'Стриминговый сервис "EPMusic" - это веб приложение для прослушивания и загрузки треков',
+    text: 'NFT Project',
     cover: project6Cover,
     content: project6Content
   }
