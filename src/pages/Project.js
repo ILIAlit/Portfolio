@@ -1,4 +1,5 @@
 import styles from "./../styles/style-progect.module.css";
+import BtnGit from "../components/btnGit/BtnGit";
 
 import { projectsList } from "../helpers/projectsList";
 
@@ -13,6 +14,9 @@ const Project = () => {
 
             <div className={styles.main__info}>
                 <div className={styles.main__text}><span>{project.text}</span></div>
+                {project.gitLink && (
+                  <BtnGit src={project.gitLink}/>
+                )}
             </div>
 
             <div className={styles.main__project}>

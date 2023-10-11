@@ -30,7 +30,7 @@ const BtnUp = () => {
         <div onClick={() => scrollToTop()} className="btn-up">
           <img src={btnUpIcon} alt="up"/>
       </div>
-      )};
+      )}
       </>
     );
 }

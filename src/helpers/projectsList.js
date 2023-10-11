@@ -23,7 +23,8 @@ const projectsList = [
     text: 'Стриминговый сервис "EPMusic" - это веб приложение для прослушивания и загрузки треков',
     cover: project1Cover,
     content: project1Content,
-    videoSrc: projectVideo
+    videoSrc: projectVideo,
+    gitLink: 'https://github.com/ILIAlit/Terracotta.NET.git'
   },
   {
     title: 'Дизайн концертной афиши',
