@@ -112,6 +112,7 @@
 @media (hover: none) and (pointer: coarse) {
   .main__project .main__hovering {
     opacity: 1;
-    background: rgba(18, 18, 18, 0.188);
+    background: rgba(99, 99, 99, 0.188);
+    text-shadow: 5px 5px 20px #000;
   }
 }
