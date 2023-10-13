@@ -8,11 +8,9 @@ const BtnUp = () => {
     const scrolled = document.documentElement.scrollTop; 
     if (scrolled > 300){ 
       setVisible(true);
-      console.log(visible); 
     }  
     else if (scrolled <= 300){ 
       setVisible(false);
-      console.log(visible);  
     } 
   };
   

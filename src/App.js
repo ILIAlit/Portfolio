@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 
 import "./styles/style.css";
 
@@ -28,6 +28,7 @@ function App() {
                         <Route path="/contact" element={<Contact />} />
                         <Route path="/blog" element={<Blog />} />
                         <Route path="/project/:id" element={<Project/>} />
+                        <Route path="*" element={<Navigate to="/" />} />
                     </Routes>
                     <BtnUp/>
                     <Footer/>

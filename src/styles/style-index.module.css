@@ -86,8 +86,32 @@
   }
 }
 
+@media(max-width: 600px) {
+  .main__hovering span {
+    font-size: 30px;
+  }
+  .main__hovering{
+    padding: 15px;
+  }
+}
+
+@media(max-width: 550px) {
+  .main__hovering span {
+    font-size: 25px;
+    max-width: 250px;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   .main__project:hover .main__hovering {
     opacity: 1;
+    
+  }
+}
+
+@media (hover: none) and (pointer: coarse) {
+  .main__project .main__hovering {
+    opacity: 1;
+    background: rgba(18, 18, 18, 0.188);
   }
 }

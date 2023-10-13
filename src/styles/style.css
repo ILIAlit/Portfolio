@@ -222,6 +222,7 @@ body {
   }
 }
 
+
 .button-git {
   display: flex;
   margin: 20px 5px;
@@ -241,11 +242,15 @@ body {
   cursor: pointer;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   transition: .6s ease;
+  font-family: 'TT-Norms-Regular';
 }
 
 .button-git svg {
   height: 30px;
 }
+
+
+
 
 @media screen and (min-width: 1024px) {
 
