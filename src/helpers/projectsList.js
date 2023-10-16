@@ -9,7 +9,7 @@ import project3Cover from "./../IMG/Projects/project-3/Cover/Cover.png";
 import project3Content from "./../IMG/Projects/project-3/Content/Content.png";
 
 import project4Cover from "./../IMG/Projects/project-4/Cover/Cover.png";
-// import project4Content from "./../IMG/Projects/project-4/Content";
+import project4Content from "./../IMG/Projects/project-4/Content/Content.png";
 
 import project5Cover from "./../IMG/Projects/project-5/Cover/Cover.png";
 import project5Content from "./../IMG/Projects/project-5/Content/Content.png";
@@ -40,9 +40,9 @@ const projectsList = [
   },
   {
     title: 'Сайт для тренировки музыкального слуха "MRNoise"',
-    text: 'MRNoise - это сайт для тренировки музыкального слуха',
+    text: 'Web дизайн сайта по тренировке музыкального слуха',
     cover: project4Cover,
-    // content: project4Content
+    content: project4Content
   },
   {
     title: 'Web-дизайн для магазина обуви',
@@ -52,7 +52,7 @@ const projectsList = [
   },
   {
     title: 'NFT Project',
-    text: 'NFT Project',
+    text: 'Web дизайн для NFT проекта',
     cover: project6Cover,
     content: project6Content
   }
